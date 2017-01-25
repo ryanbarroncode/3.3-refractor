@@ -23,14 +23,14 @@
 // to a variable containing an anonymous
 // function
 
-function doSomethingCool() {
-  console.log("Something Cool!");
-}
-
-// Put your answer below -------------------------
-var doSomethingCool = function(input){
-};
-console.log("something cool");
+// function doSomethingCool() {
+//   console.log("Something Cool!");
+// }
+//
+// // Put your answer below -------------------------
+// var doSomethingCool = function(input){
+// };
+// console.log("something cool");
 
 // -----------------------------------------------
 
@@ -50,10 +50,10 @@ console.log("something cool");
 // setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
-var sayHi = function(){
-  alert("Hello, World!");
-};
-setTimeout(sayHi, 2000);
+// var sayHi = function(){
+//   alert("Hello, World!");
+// };
+// setTimeout(sayHi, 2000);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -71,15 +71,15 @@ setTimeout(sayHi, 2000);
 
 // Please explain your answer.
 
-var letter = "x";
-
-setTimeout(function(){
-  letter = "y";
-  console.log("The letter is", letter);
-}, 1);
-
-letter = "z";
-console.log("The letter is", letter);
+// var letter = "x";
+//
+// setTimeout(function(){
+//   letter = "y";
+//   console.log("The letter is", letter);
+// }, 1);
+//
+// letter = "z";
+// console.log("The letter is", letter);
 
 // Put your answer below -------------------------
 // Javascript runs two times, we learned today that it finds all the functions
@@ -87,7 +87,7 @@ console.log("The letter is", letter);
 // so line 81 letter = "z"; is actually refering to the variable up top of var letter = "x";
 // we didnt console log letter x, so we dont see it in the console. we see z first because its being
 // logged immediatly.  The letter y has a 1 second timer hooked up to it to display
-// after. 
+// after.
 
 // -----------------------------------------------
 
@@ -107,8 +107,14 @@ var reverseStr = function(str) {
   str = arr.join("");
   return str;
 };
-
+reverseStr("heeeey");
 // Put your answer below -------------------------
+var reverseStr = function(str) {
+  return str.split("").reverse().join("");
+};
+console.log(reverseStr("str"));
+
+
 
 
 // -----------------------------------------------
