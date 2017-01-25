@@ -28,7 +28,9 @@ function doSomethingCool() {
 }
 
 // Put your answer below -------------------------
-
+var doSomethingCool = function(input){
+};
+console.log("something cool");
 
 // -----------------------------------------------
 
@@ -288,7 +290,6 @@ var accelerate = function(amount) {
 var callLater = function(timeout, callback) {
   setTimeout(callback, timeout);
 };
-//1
 // Put your answer below -------------------------
 
 
