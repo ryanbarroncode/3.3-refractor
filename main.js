@@ -172,7 +172,8 @@ console.log(spanishColor('negro'));
 // Break it up so that the declaration and
 // assignment are happening on 2 seperate lines.
 
-var foo = "bar";
+var foo;
+foo  = "bar";
 
 // Put your answer below -------------------------
 
