@@ -149,8 +149,17 @@ var spanishColor = function(colorName) {
 };
 
 // Put your answer below -------------------------
-
-
+var spanishColor = function(colorName){
+var color = {
+    rojo: "#ff0000",
+    blanco: "#ffffff",
+    azul: "#0000ff",
+    verde: "#00ff00",
+    negro: "#000000"
+  }; return color[colorName];
+};
+spanishColor('rojo');
+console.log(spanishColor('negro'));
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
