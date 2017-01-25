@@ -82,7 +82,12 @@ letter = "z";
 console.log("The letter is", letter);
 
 // Put your answer below -------------------------
-
+// Javascript runs two times, we learned today that it finds all the functions
+// and puts them at the top without running any functions to start with.
+// so line 81 letter = "z"; is actually refering to the variable up top of var letter = "x";
+// we didnt console log letter x, so we dont see it in the console. we see z first because its being
+// logged immediatly.  The letter y has a 1 second timer hooked up to it to display
+// after. 
 
 // -----------------------------------------------
 
