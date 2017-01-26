@@ -198,6 +198,17 @@ var callTenTimes = function(callback) {
 };
 
 // Put your answer below -------------------------
+var callNTimes = function(callback, num) {
+  for(var i = 0; i < num; i++){
+    callback();
+  };
+}
+
+var myAwesomeFunction = function() {
+  console.log('hey you');
+};
+
+callNTimes(myAwesomeFunction, 10);
 
 
 // -----------------------------------------------
@@ -226,8 +237,17 @@ var decreaseScore = function() {
 };
 
 // Put your answer below -------------------------
+(function (){
+var score = 0;
 
+var increaseScore = function() {
+  score++;
+};
 
+var decreaseScore = function() {
+  score--;
+};
+}());
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -240,12 +260,15 @@ var decreaseScore = function() {
 // the function to make it work.
 
 var addNumbers = function(numberA, numberB) {
-  console.log(numberA + numberB);
+return (numberA + numberB);
 };
 
 var twoPlusTwo = addNumbers(2,2);
-
+console.log(twoPlusTwo);
 // Put your answer below -------------------------
+var addNumbers = function(numberA, numberB) {
+
+};
 
 
 // -----------------------------------------------
@@ -265,15 +288,26 @@ var twoPlusTwo = addNumbers(2,2);
 // Then refactor the function to have a default
 // amount of 1 if no param is given.
 
-var speed = 0;
+var speed = 10;
+
+// var accelerate = function(amount) {
+//   amount = 1;
+//   console.log(amount);
+//   speed = speed + amount;
+// };
+// accelerate(3);
+// console.log(speed);
+// Put your answer below -------------------------
+// if amount is specified.
 
 var accelerate = function(amount) {
+  if (amount == undefined){
+    amount = 1;
+    }
   speed += amount;
-};
-
-// Put your answer below -------------------------
-
-
+}
+accelerate(5);
+console.log(speed);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
