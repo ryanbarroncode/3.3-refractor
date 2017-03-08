@@ -28,9 +28,9 @@
 // }
 //
 // // Put your answer below -------------------------
-// var doSomethingCool = function(input){
-// };
-// console.log("something cool");
+var doSomethingCool = function(input){
+};
+console.log("something cool");
 
 // -----------------------------------------------
 
@@ -50,10 +50,10 @@
 // setTimeout(sayHi, 2000);
 
 // Put your answer below -------------------------
-// var sayHi = function(){
-//   alert("Hello, World!");
-// };
-// setTimeout(sayHi, 2000);
+var sayHi = function(){
+  alert("Hello, World!");
+};
+setTimeout(sayHi, 2000);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -100,14 +100,14 @@
 // of the function is 5 lines of code. Refactor
 // this function to do the same thing with 1 line
 
-var reverseStr = function(str) {
-  var arr;
-  arr = str.split("");
-  arr = arr.reverse();
-  str = arr.join("");
-  return str;
-};
-reverseStr("heeeey");
+// var reverseStr = function(str) {
+//   var arr;
+//   arr = str.split("");
+//   arr = arr.reverse();
+//   str = arr.join("");
+//   return str;
+// };
+// reverseStr("heeeey");
 // Put your answer below -------------------------
 var reverseStr = function(str) {
   return str.split("").reverse().join("");
@@ -130,23 +130,23 @@ console.log(reverseStr("str"));
 // Refactor this function to use an object
 // instead of an if/else statement.
 
-var spanishColor = function(colorName) {
-  if (colorName.toLowerCase() === "rojo") {
-    return "#ff0000";
-  }
-  else if (colorName.toLowerCase() === "blanco") {
-    return "#ffffff";
-  }
-  else if (colorName.toLowerCase() === "azul") {
-    return "#0000ff";
-  }
-  else if (colorName.toLowerCase() === "verde") {
-    return "#00ff00";
-  }
-  else if (colorName.toLowerCase() === "negro") {
-    return "#000000";
-  }
-};
+// var spanishColor = function(colorName) {
+//   if (colorName.toLowerCase() === "rojo") {
+//     return "#ff0000";
+//   }
+//   else if (colorName.toLowerCase() === "blanco") {
+//     return "#ffffff";
+//   }
+//   else if (colorName.toLowerCase() === "azul") {
+//     return "#0000ff";
+//   }
+//   else if (colorName.toLowerCase() === "verde") {
+//     return "#00ff00";
+//   }
+//   else if (colorName.toLowerCase() === "negro") {
+//     return "#000000";
+//   }
+// };
 
 // Put your answer below -------------------------
 var spanishColor = function(colorName){
@@ -158,8 +158,8 @@ var color = {
     negro: "#000000"
   }; return color[colorName];
 };
-spanishColor('rojo');
-console.log(spanishColor('negro'));
+spanishColor();
+console.log(spanishColor('azul'));
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -172,12 +172,12 @@ console.log(spanishColor('negro'));
 // Break it up so that the declaration and
 // assignment are happening on 2 seperate lines.
 
-var foo;
-foo  = "bar";
-
+// var foo = "bar";
 // Put your answer below -------------------------
 
-
+var foo;
+foo  = "bar";
+console.log(foo);
 // -----------------------------------------------
 
 //////////////////////////////////////////////////
@@ -287,16 +287,21 @@ var addNumbers = function(numberA, numberB) {
 // setting speed to NaN when no parameter is given
 // Then refactor the function to have a default
 // amount of 1 if no param is given.
+var speed = 0;
+
+var accelerate = function(amount) {
+  speed += amount;
+};
+
 
 var speed = 10;
-
-// var accelerate = function(amount) {
-//   amount = 1;
-//   console.log(amount);
-//   speed = speed + amount;
-// };
-// accelerate(3);
-// console.log(speed);
+var accelerate = function(amount) {
+    amount = 1;
+    console.log(amount);
+    speed = speed + amount;
+};
+accelerate(3);
+console.log(speed);
 // Put your answer below -------------------------
 // if amount is specified.
 
